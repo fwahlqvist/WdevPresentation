@@ -1,0 +1,32 @@
+{
+    "name": "fwahlqvist/wdev-presentation",
+    "description": "ZF2 Module implementing reveal.js presentation",
+    "type": "library",
+    "keywords": [
+        "zf2",
+        "zend",
+        "module",
+        "reveeal.js",
+        "Presentation"
+    ],
+    "homepage": "https://github.com/fwahlqvist/WdevPresentation",
+    "authors": [
+        {
+            "name": "Fredrik Wahlqvist",
+            "email": "fwahlqvist@gmail.com",
+            "homepage": "http://wahlqvist.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "WdevPresentation": "src/"
+        },
+        "classmap": [
+            "./"
+        ]
+    }
+}

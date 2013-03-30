@@ -1,0 +1,28 @@
+<?php
+
+
+$title = 'My Presentation';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+
+
+<table class="table">
+<tr>
+    <th>Title</th>
+    <th>Content</th>
+    <th>&nbsp;</th>
+</tr>
+
+<tr>
+    <td><?php echo $this->escapeHtml($presentation->title);?></td>
+    <td><?php echo $this->escapeHtml($presentation->content);?></td>
+    <td>
+        <a href="<?php echo $this->url('presentation',
+            array('action'=>'edit', 'id' => $presentation->id));?>">Edit</a>
+        <a href="<?php echo $this->url('presentation',
+            array('action'=>'delete', 'id' => $presentation->id));?>">Delete</a>
+    </td>
+</tr>
+
+</table>
