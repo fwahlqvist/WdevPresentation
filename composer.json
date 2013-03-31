@@ -17,9 +17,20 @@
             "homepage": "http://wahlqvist.com/"
         }
     ],
+    "type": "package",
+    "package": {
+        "name": "hakimel/reveal.js",
+        "type": "asset-scripts",
+        "version": "dev-master",
+        "dist": {
+            "url": "https://github.com/hakimel/reveal.js/archive/master.zip",
+            "type": "zip"
+        }
+    },
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "2.*"
+        "zendframework/zendframework": "2.*",
+        "hakimel/reveal.js": "dev-master"
     },
     "autoload": {
         "psr-0": {
@@ -28,5 +39,6 @@
         "classmap": [
             "./"
         ]
-    }
+    },
+          
 }
