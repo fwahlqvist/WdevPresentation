@@ -22,7 +22,7 @@
             "type": "package",
             "package": {
                 "name": "hakimel/reveal.js",
-                "type": "asset-scripts",
+                "type": "package",
                 "version": "*",
                 "dist": {
                     "url": "https://github.com/hakimel/reveal.js/archive/master.zip",
