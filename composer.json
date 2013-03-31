@@ -21,19 +21,15 @@
         {
             "type": "package",
             "package": {
-                "name": "smarty/smarty",
-                "version": "3.1.7",
+                "name": "hakimel/reveal.js",
+                "version": "dev-master",
                 "dist": {
-                    "url": "http://www.smarty.net/files/Smarty-3.1.7.zip",
+                    "url": "https://github.com/hakimel/reveal.js/archive/master.zip",
                     "type": "zip"
                 },
                 "source": {
-                    "url": "http://smarty-php.googlecode.com/svn/",
-                    "type": "svn",
-                    "reference": "tags/Smarty_3_1_7/distribution/"
-                },
-                "autoload": {
-                    "classmap": ["libs/"]
+                    "url": "https://github.com/hakimel/reveal.js.git",
+                    "type": "svn"
                 }
             }
         }
@@ -41,7 +37,7 @@
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
-        "smarty/smarty": "3.1.*"
+        "hakimel/reveal.js": "dev-master"
     },
     "autoload": {
         "psr-0": {
