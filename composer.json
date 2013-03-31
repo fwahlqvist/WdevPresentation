@@ -16,16 +16,11 @@
             "email": "fwahlqvist@gmail.com",
             "homepage": "http://wahlqvist.co.uk/"
         }
-    ],        
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git://github.com/hakimel/reveal.js.git"
-        }
-    ],        
+    ],                
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "2.*"
+        "zendframework/zendframework": "2.*",
+        "hakimel/reveal.js": "=>2.4.0"
     },
     "autoload": {
         "psr-0": {
