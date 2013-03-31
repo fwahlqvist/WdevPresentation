@@ -17,23 +17,31 @@
             "homepage": "http://wahlqvist.com/"
         }
     ],        
-    "repositories": {
-        "hakimel/reveal.js": {
+    "repositories": [
+        {
             "type": "package",
             "package": {
-                "name": "hakimel/reveal.js",
-                "version": "v2.3",
+                "name": "smarty/smarty",
+                "version": "3.1.7",
                 "dist": {
-                    "url": "https://github.com/hakimel/reveal.js/archive/v2.3.zip",
+                    "url": "http://www.smarty.net/files/Smarty-3.1.7.zip",
                     "type": "zip"
+                },
+                "source": {
+                    "url": "http://smarty-php.googlecode.com/svn/",
+                    "type": "svn",
+                    "reference": "tags/Smarty_3_1_7/distribution/"
+                },
+                "autoload": {
+                    "classmap": ["libs/"]
                 }
             }
         }
-    },        
+    ],        
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
-        "hakimel/reveal.js": "v2.3"
+        "smarty/smarty": "3.1.*"
     },
     "autoload": {
         "psr-0": {
