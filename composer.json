@@ -16,17 +16,26 @@
             "email": "fwahlqvist@gmail.com",
             "homepage": "http://wahlqvist.com/"
         }
-    ],
-    "type": "package",
-    "package": {
-        "name": "hakimel/reveal.js",
-        "type": "asset-scripts",
-        "version": "dev-master",
-        "dist": {
-            "url": "https://github.com/hakimel/reveal.js/archive/master.zip",
-            "type": "zip"
+    ],        
+    "repositories": {
+        "reveal.js": {
+            "type": "package",
+            "package": {
+                "name": "hakimel/reveal.js",
+                "type": "asset-scripts",
+                "version": "dev-master",
+                "dist": {
+                    "url": "https://github.com/hakimel/reveal.js/archive/master.zip",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "git@github.com:hakimel/reveal.js.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         }
-    },
+    },        
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
