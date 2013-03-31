@@ -14,26 +14,19 @@
         {
             "name": "Fredrik Wahlqvist",
             "email": "fwahlqvist@gmail.com",
-            "homepage": "http://wahlqvist.com/"
+            "homepage": "http://wahlqvist.co.uk/"
         }
     ],        
     "repositories": [
         {
-            "type": "package",
-            "package": {
-                "name": "hakimel/reveal.js",
-                "version": "dev-master",
-                "dist": {
-                    "url": "git://github.com/hakimel/reveal.js.git",
-                    "type": "vcs"
-                }
-            }
+            "type": "vcs",
+            "url": "git://github.com/hakimel/reveal.js.git"
         }
     ],        
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
-        "hakimel/reveal.js": "dev-master"
+        "hakimel/reveal.js": "master"
     },
     "autoload": {
         "psr-0": {
