@@ -22,7 +22,6 @@
             "type": "package",
             "package": {
                 "name": "hakimel/reveal.js",
-                "type": "package",
                 "version": "dev-master",
                 "dist": {
                     "url": "https://github.com/hakimel/reveal.js/archive/master.zip",
