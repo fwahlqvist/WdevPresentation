@@ -26,10 +26,6 @@
                 "dist": {
                     "url": "https://github.com/hakimel/reveal.js/archive/master.zip",
                     "type": "zip"
-                },
-                "source": {
-                    "url": "https://github.com/hakimel/reveal.js.git",
-                    "type": "svn"
                 }
             }
         }
