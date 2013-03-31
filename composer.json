@@ -23,15 +23,10 @@
             "package": {
                 "name": "hakimel/reveal.js",
                 "type": "package",
-                "version": "*",
+                "version": "dev-master",
                 "dist": {
                     "url": "https://github.com/hakimel/reveal.js/archive/master.zip",
                     "type": "zip"
-                },
-                "source": {
-                    "url": "git@github.com:hakimel/reveal.js.git",
-                    "type": "git",
-                    "reference": "master"
                 }
             }
         }
@@ -39,7 +34,7 @@
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
-        "hakimel/reveal.js": "*"
+        "hakimel/reveal.js": "dev-master"
     },
     "autoload": {
         "psr-0": {
