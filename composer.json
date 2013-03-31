@@ -24,7 +24,7 @@
                 "name": "hakimel/reveal.js",
                 "version": "v2.3",
                 "dist": {
-                    "url": "https://github.com/hakimel/reveal.js/archive/master.zip",
+                    "url": "https://github.com/hakimel/reveal.js/archive/v2.3.zip",
                     "type": "zip"
                 }
             }
