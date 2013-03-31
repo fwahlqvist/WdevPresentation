@@ -18,7 +18,7 @@
         }
     ],        
     "repositories": {
-        "reveal.js": {
+        "hakimel/reveal.js": {
             "type": "package",
             "package": {
                 "name": "hakimel/reveal.js",
