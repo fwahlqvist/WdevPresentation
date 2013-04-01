@@ -16,10 +16,16 @@
             "homepage": "http://wahlqvist.co.uk/"
         }
     ],                
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/fwahlqvist/reveal.js"
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
-        "fwahlqvist/reveal.js": "v2.3"
+        "fwahlqvist/reveal.js": "dev-master"
     },
     "autoload": {
         "psr-0": {
