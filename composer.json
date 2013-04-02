@@ -15,7 +15,20 @@
             "email": "fwahlqvist@gmail.com",
             "homepage": "http://wahlqvist.co.uk/"
         }
-    ],                
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "hakimel/reveal.js",
+                "version": "dev-master",
+                "dist": {
+                    "url": "https://github.com/hakimel/reveal.js/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],        
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
