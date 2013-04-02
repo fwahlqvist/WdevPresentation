@@ -15,7 +15,6 @@
             "email": "fwahlqvist@gmail.com",
             "homepage": "http://wahlqvist.co.uk/"
         }
-<<<<<<< HEAD
     ], 
     "repositories": [
         {
@@ -29,16 +28,11 @@
                 }
             }
         }
-=======
->>>>>>> b7353a42d4073196c7c238f9aad3f5d062c60871
     ],
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
-<<<<<<< HEAD
         "hakimel/reveal.js": "dev-master"
-=======
->>>>>>> b7353a42d4073196c7c238f9aad3f5d062c60871
     },
     "autoload": {
         "psr-0": {
