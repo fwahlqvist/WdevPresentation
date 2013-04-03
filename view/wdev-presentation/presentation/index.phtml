@@ -21,6 +21,8 @@ $this->headTitle($title);
     <td><?php echo $this->escapeHtml($presentation->content);?></td>
     <td>
         <a href="<?php echo $this->url('presentation',
+            array('action'=>'view', 'id' => $presentation->id));?>">View</a>
+        <a href="<?php echo $this->url('presentation',
             array('action'=>'edit', 'id' => $presentation->id));?>">Edit</a>
         <a href="<?php echo $this->url('presentation',
             array('action'=>'delete', 'id' => $presentation->id));?>">Delete</a>
