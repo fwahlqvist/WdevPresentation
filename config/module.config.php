@@ -25,6 +25,14 @@ return array(
         ),
     ),
     
+    'asset_manager' => array(
+        'resolver_configs' => array(
+            'paths' => array(
+                __DIR__ . '/../../../hakimel/reveal.js/',
+            ),
+        ),
+    ),
+    
     'view_manager' => array(
         'template_path_stack' => array(
             'presentation' => __DIR__ . '/../view',
