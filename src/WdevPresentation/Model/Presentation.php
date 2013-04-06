@@ -66,17 +66,21 @@ class Presentation implements InputFilterAwareInterface
             $inputFilter->add($factory->createInput(array(
                 'name'     => 'content',
                 'required' => true,
-                'filters'  => array(
-                    array('name' => 'StripTags'),
+                /*'filters'  => array(
+                    array('name' => 'StripTags',
+                        'options' => array(
+                            'allowTags' => array('p','strong','em','u','h1','h2','h3','h4','h5','h6','img','li','ol','ul','span','div','br','ins','del', 'a','pre', '<!--', '-->', 'section', 'aside', 'script', 'small', 'code', 'blockquote', 'iframe', 'form'),
+                            'allowAttribs' => array('href', 'title', 'src', 'class','width', 'height', 'type', 'id', 'data-state','contenteditable', 'cite', 'target', 'action', 'src'),
+                        )),
                     array('name' => 'StringTrim'),
-                ),
+                ),*/
                 'validators' => array(
                     array(
                         'name'    => 'StringLength',
                         'options' => array(
                             'encoding' => 'UTF-8',
                             'min'      => 1,
-                            'max'      => 100,
+                            'max'      => 25500,
                         ),
                     ),
                 ),

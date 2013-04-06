@@ -28,7 +28,8 @@ class PresentationForm extends Form
         $this->add(array(
             'name' => 'content',
             'attributes' => array(
-                'type'  => 'text',
+                'type'  => 'textarea',
+                'rows' => '10'
             ),
             'options' => array(
                 'label' => 'Content',

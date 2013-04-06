@@ -30,20 +30,22 @@ class PresentationController extends AbstractActionController
 
     public function viewAction()
     {
-        $layout = $this->layout();
-        $layout->setTemplate('wdev-presentation/layout/presentation.phtml');
+        //$view = $this->layout();
+        //$layout->setTemplate('wdev-presentation/layout/presentation.phtml');
         $id = (int) $this->params()->fromRoute('id', 0);
         if (!$id) {
             return $this->redirect()->toRoute('presentation', array(
                 'action' => 'index'
             ));
         }
-        return new ViewModel(array(
-                'presentation' => $this->getPresentationTable()->getPresentation($id),
-            ));
-
+        
+        $viewModel = new ViewModel();
+        $viewModel->setTerminal(true);
+        $viewModel->setVariables(array('presentation' => $this->getPresentationTable()->getPresentation($id)));
+        return $viewModel;
+        
     }
-    
+   
     public function addAction()
     {
         $form = new PresentationForm();
