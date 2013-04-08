@@ -49,18 +49,54 @@ echo $this->doctype();?>
 	<body>
             
             <?php echo $presentation->content;?>
-            <script>
+     		
+            
+                
+
+	
+                
+                
+                
+                <?php
+                $this->inlineScript()->appendFile($basePath . '/lib/js/head.min.js')
+                                    ->appendFile($basePath . '/js/reveal.min.js')
+                                    ->appendFile($basePath . '/plugin/highlight/highlight.js', 'text/javascript')
+                                    ->appendFile($basePath . '/plugin/zoom-js/zoom.js', 'text/javascript')
+                                    ->appendFile($basePath . '/plugin/notes/notes.js', 'text/javascript')
+                                    
+                                    // ->appendScript('document.write( \'<link rel="stylesheet" href="/css/print/\' + ( window.location.search.match( /print-pdf/gi ) ? \'pdf\' : \'paper\' ) + \'.css" type="text/css" media="print">\'', 'text/css', array('noescape' => true));
+                ?>
+                
+                <!-- Scripts -->
+                <?php echo $this->inlineScript() ?>
+                	
+                
+                <script>
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
+				
+                                controls: <?php echo $presentation->controls;?>,
+                                progress: <?php echo $presentation->progress;?>,
+                                history: <?php echo $presentation->history;?>,
+                                center: <?php echo $presentation->center;?>,
+                                keyboard: <?php echo $presentation->keyboard;?>,
+                                overview :<?php echo $presentation->overview;?>,
+                                loop: <?php echo $presentation->looop;?>,
+                                rtl: <?php echo $presentation->rtl;?>,
+                                mouseWeel: <?php echo $presentation->mouseWeel;?>,
+                                rollingLinks: <?php echo $presentation->rollingLinks;?>,
+                                presetationWidth: <?php echo $presentation->presetationWidth;?>,
+                                presentationHeight: <?php echo $presentation->presentationHeight;?>,
+                                presentationMargin: <?php echo $presentation->presentationMargin;?>,
+                                presentationMinScale: <?php echo $presentation->presentationMinScale;?>,
+                                presentationMaxScale: <?php echo $presentation->presentationMaxScale;?>,
+                                autoSlide: <?php echo $presentation->autoSlide;?>,
+                                
+                                
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || '<?php echo $presentation->transition;?>', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [

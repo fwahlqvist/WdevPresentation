@@ -21,4 +21,39 @@ echo $this->formHidden($form->get('id'));
 echo $this->formRow($form->get('title'));
 echo $this->formRow($form->get('content'));
 echo $this->formSubmit($form->get('submit'));
-echo $this->form()->closeTag();
+echo $this->formRow($form->get('private'));
+echo $this->formRow($form->get('theme'));
+?>
+<datalist id="themes">
+    <option value="default">
+    <option value="beige">
+    <option value="sky">
+    <option value="night">
+    <option value="serif">
+    <option value="simple">
+</datalist>
+<?php
+echo $this->formRow($form->get('controls'));
+echo $this->formRow($form->get('progress'));
+echo $this->formRow($form->get('history'));
+echo $this->formRow($form->get('center'));
+echo $this->formRow($form->get('autoSlide'));
+echo $this->formRow($form->get('keyboard'));
+echo $this->formRow($form->get('overview'));
+echo $this->formRow($form->get('looop'));
+echo $this->formRow($form->get('rtl'));
+echo $this->formRow($form->get('mouseWeel'));
+echo $this->formRow($form->get('rollingLinks'));
+echo $this->formRow($form->get('transition'));
+echo $this->formRow($form->get('presetationWidth'));
+echo $this->formRow($form->get('presentationHeight'));
+echo $this->formRow($form->get('presentationUnit'));
+echo $this->formRow($form->get('presentationMargin'));
+echo $this->formRow($form->get('presentationMinScale'));
+echo $this->formRow($form->get('presentationMaxScale'));
+echo $this->formRow($form->get('multiplexId'));
+echo $this->formRow($form->get('multiplexSecret'));
+echo $this->formRow($form->get('multiplexUrl'));
+echo $this->formRow($form->get('timestamp'));
+echo $this->formSubmit($form->get('submit'));
+echo $this->form()->closeTag();?>
